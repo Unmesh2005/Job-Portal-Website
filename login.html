@@ -4,9 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post a Job - JobEntry</title>
+    <title>Login - JobEntry</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .login-section {
+            padding: 100px 0;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f7f6;
+        }
+
+        .login-container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .login-header h2 {
+            color: #00B074;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form-group input:focus {
+            border-color: #00B074;
+            outline: none;
+        }
+
+        .form-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .form-footer a {
+            color: #00B074;
+            text-decoration: none;
+        }
+
+        .btn-block {
+            width: 100%;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: #00B074;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,12 +101,12 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="jobs.html">Jobs</a></li>
                     <li><a href="index.html#categories">Categories</a></li>
-                    <li><a href="post-job.html" class="active">For Recruiters</a></li>
+                    <li><a href="post-job.html">For Recruiters</a></li>
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="login.html" class="btn btn-outline active">Login</a>
                     <a href="post-job.html" class="btn btn-primary">Post a Job</a>
                 </div>
                 <div class="mobile-menu-btn">
@@ -35,75 +116,32 @@
         </div>
     </header>
 
-    <!-- Page Header -->
-    <div class="section-title" style="padding-top: 60px;">
-        <h2>Post A Job</h2>
-        <p>Find the best talent for your company</p>
-    </div>
-
-    <!-- Post Job Form -->
-    <section class="post-job-container">
-        <form>
-            <div class="form-row">
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="login-container">
+            <div class="login-header">
+                <h2>Welcome Back</h2>
+                <p>Login to access your account</p>
+            </div>
+            <form>
                 <div class="form-group">
-                    <label>Job Title</label>
-                    <input type="text" placeholder="e.g. Software Engineer">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
-                    <label>Company Name</label>
-                    <input type="text" placeholder="e.g. Google Inc.">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
                 </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Job Location</label>
-                    <input type="text" placeholder="e.g. New York, USA">
+                <div class="form-footer">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
                 </div>
-                <div class="form-group">
-                    <label>Salary Range</label>
-                    <input type="text" placeholder="e.g. $120k - $150k">
-                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+            <div class="signup-link">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
             </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Job Type</label>
-                    <select>
-                        <option>Full Time</option>
-                        <option>Part Time</option>
-                        <option>Remote</option>
-                        <option>Contract</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Category</label>
-                    <select>
-                        <option>IT & Software</option>
-                        <option>Marketing</option>
-                        <option>Finance</option>
-                        <option>Design</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Job Description</label>
-                <textarea rows="5" placeholder="Enter job description..."></textarea>
-            </div>
-
-            <div class="form-group">
-                <label>Responsibilities</label>
-                <textarea rows="4" placeholder="Enter job responsibilities..."></textarea>
-            </div>
-
-            <div class="form-group">
-                <label>Qualifications</label>
-                <textarea rows="4" placeholder="Enter job qualifications..."></textarea>
-            </div>
-
-            <button class="btn btn-primary" style="width: 100%;">Post Job Now</button>
-        </form>
+        </div>
     </section>
 
     <!-- Footer -->
