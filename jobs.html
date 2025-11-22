@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listing - JobEntry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Job<span>Entry</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jobs.html" class="active">Jobs</a></li>
+                    <li><a href="index.html#categories">Categories</a></li>
+                    <li><a href="post-job.html">For Recruiters</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="btn btn-outline">Login</a>
+                    <a href="post-job.html" class="btn btn-primary">Post a Job</a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="section-title" style="padding-top: 60px;">
+        <h2>Job Listing</h2>
+        <p>Find the job that fits your life</p>
+    </div>
+
+    <!-- Job Listing Section -->
+    <section class="job-listing-container">
+        <div class="container">
+
+            <!-- Filters -->
+            <div class="filters-bar">
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>Job Type</option>
+                        <option>Full Time</option>
+                        <option>Part Time</option>
+                        <option>Remote</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>Category</option>
+                        <option>IT & Software</option>
+                        <option>Marketing</option>
+                        <option>Design</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>Location</option>
+                        <option>New York</option>
+                        <option>London</option>
+                        <option>Remote</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>Experience</option>
+                        <option>Entry Level</option>
+                        <option>Mid Level</option>
+                        <option>Senior Level</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary">Filter</button>
+            </div>
+
+            <!-- Job Grid -->
+            <div class="job-grid">
+                <!-- Job Card 1 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">G</div>
+                        <span class="job-type-badge">Full Time</span>
+                    </div>
+                    <h3>Software Engineer</h3>
+                    <p class="company-name">Google Inc.</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> New York, USA</span>
+                        <span><i class="far fa-clock"></i> 2 days ago</span>
+                    </div>
+                    <div class="job-card-footer">
+                        <span class="salary">$120k - $150k</span>
+                        <div class="actions">
+                            <a href="job-detail.html" class="btn btn-outline"
+                                style="padding: 8px 16px; font-size: 0.9rem;">View Details</a>
+                            <a href="job-detail.html" class="btn btn-primary"
+                                style="padding: 8px 16px; font-size: 0.9rem;">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Card 2 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">M</div>
+                        <span class="job-type-badge">Remote</span>
+                    </div>
+                    <h3>Marketing Manager</h3>
+                    <p class="company-name">Microsoft</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                        <span><i class="far fa-clock"></i> 1 week ago</span>
+                    </div>
+                    <div class="job-card-footer">
+                        <span class="salary">$80k - $100k</span>
+                        <div class="actions">
+                            <a href="job-detail.html" class="btn btn-outline"
+                                style="padding: 8px 16px; font-size: 0.9rem;">View Details</a>
+                            <a href="job-detail.html" class="btn btn-primary"
+                                style="padding: 8px 16px; font-size: 0.9rem;">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Card 3 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">A</div>
+                        <span class="job-type-badge">Part Time</span>
+                    </div>
+                    <h3>Product Designer</h3>
+                    <p class="company-name">Amazon</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Seattle, USA</span>
+                        <span><i class="far fa-clock"></i> 3 days ago</span>
+                    </div>
+                    <div class="job-card-footer">
+                        <span class="salary">$90k - $110k</span>
+                        <div class="actions">
+                            <a href="job-detail.html" class="btn btn-outline"
+                                style="padding: 8px 16px; font-size: 0.9rem;">View Details</a>
+                            <a href="job-detail.html" class="btn btn-primary"
+                                style="padding: 8px 16px; font-size: 0.9rem;">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Card 4 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">F</div>
+                        <span class="job-type-badge">Full Time</span>
+                    </div>
+                    <h3>Creative Director</h3>
+                    <p class="company-name">Facebook</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> California, USA</span>
+                        <span><i class="far fa-clock"></i> 5 hours ago</span>
+                    </div>
+                    <div class="job-card-footer">
+                        <span class="salary">$150k - $200k</span>
+                        <div class="actions">
+                            <a href="job-detail.html" class="btn btn-outline"
+                                style="padding: 8px 16px; font-size: 0.9rem;">View Details</a>
+                            <a href="job-detail.html" class="btn btn-primary"
+                                style="padding: 8px 16px; font-size: 0.9rem;">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Card 5 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">N</div>
+                        <span class="job-type-badge">Remote</span>
+                    </div>
+                    <h3>Wordpress Developer</h3>
+                    <p class="company-name">Netflix</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                        <span><i class="far fa-clock"></i> 2 days ago</span>
+                    </div>
+                    <div class="job-card-footer">
+                        <span class="salary">$60k - $80k</span>
+                        <div class="actions">
+                            <a href="job-detail.html" class="btn btn-outline"
+                                style="padding: 8px 16px; font-size: 0.9rem;">View Details</a>
+                            <a href="job-detail.html" class="btn btn-primary"
+                                style="padding: 8px 16px; font-size: 0.9rem;">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Card 6 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="company-logo">T</div>
+                        <span class="job-type-badge">Full Time</span>
+                    </div>
+                    <h3>Sales Executive</h3>
+                    <p class="company-name">Tesla</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Austin, USA</span>
+                        <span><i class="far fa-clock"></i> 1 day ago</span>
+                    </div>
+                    <div class="job-card-footer">
+                        <span class="salary">$50k - $70k</span>
+                        <div class="actions">
+                            <a href="job-detail.html" class="btn btn-outline"
+                                style="padding: 8px 16px; font-size: 0.9rem;">View Details</a>
+                            <a href="job-detail.html" class="btn btn-primary"
+                                style="padding: 8px 16px; font-size: 0.9rem;">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <button class="btn btn-outline">Load More Jobs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>JobEntry</h3>
+                    <p>The best job portal for finding your dream job or the perfect candidate. Connect with us today.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +012 345 67890</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> info@example.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to get the latest job updates.</p>
+                    <div class="input-group" style="margin-top: 10px;">
+                        <input type="email" placeholder="Your Email"
+                            style="padding: 10px; width: 100%; margin-bottom: 10px;">
+                        <button class="btn btn-primary" style="width: 100%;">SignUp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 JobEntry. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
