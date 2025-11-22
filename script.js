@@ -45,8 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Simple Form Submission Simulation
-    const forms = document.querySelectorAll('form');
+    // Login Form Handling
+    const loginForm = document.getElementById('login-form');
+    if (loginForm) {
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Login Successful!');
+            window.location.href = 'index.html';
+        });
+    }
+
+    // Other Forms Handling (exclude login form)
+    const forms = document.querySelectorAll('form:not(#login-form)');
     forms.forEach(form => {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
